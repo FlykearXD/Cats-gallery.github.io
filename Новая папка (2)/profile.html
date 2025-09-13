@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Profile</title>
+  <link rel="icon" type="image/jpg" href="myimage.jpg">
+  <meta charset="UTF-8">
+  <title>Профиль</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="body">
+
+<div class="theme-menu">
+  <button class="theme-btn" data-bg="soft" title="Soft"></button>
+  <button class="theme-btn" data-bg="dark" title="Dark"></button>
+  <button class="theme-btn" data-bg="purple-dark" title="Purple Dark"></button>
+  <button class="theme-btn" data-bg="purple-light" title="Purple Light"></button>
+  <button class="theme-btn" data-bg="sunset" title="Sunset"></button>
+</div>
+     
+  <!-- Навигационная панель -->
+ <div class="navbar">
+    <a href="index.html">Главная</a>
+    <a href="news.html">Новости</a>
+    <a href="#">Поддержка</a>
+    <a href="profile.html" class="profile-link">
+      <span>Профиль</span>
+      <img src="myimage.jpg" alt="Моя картинка" class="my-avatar">
+    </a>
+  </div>
+
+  <div class="content">
+    <!-- Здесь будут кнопки выбора фона -->
+    <div class="theme-menu">
+      <button class="theme-btn" data-bg="soft"></button>
+      <button class="theme-btn" data-bg="dark"></button>
+      <button class="theme-btn" data-bg="purple-dark"></button>
+      <button class="theme-btn" data-bg="purple-light"></button>
+      <button class="theme-btn" data-bg="sunset"></button>
+    </div>
+  </div>
+
+  <!-- Панель настроек профиля -->
+  <div class="settings-panel">
+    <div class="avatar-section">
+      <img src="myimage.jpg" alt="Аватар" class="settings-avatar">
+      <button id="change-avatar-btn" class="btn">Сменить аватар</button>
+    </div>
+    
+    <div class="nickname-section">
+  <label for="nickname">Никнейм:</label>
+  <input type="text" id="nickname">
+  <button id="save-nickname" class="btn">Сохранить</button>
+</div>
+
+<div id="avatar-choices" class="avatars">
+  <h3>Выбери аватар:</h3>
+  <img src="avatars/ava1.jpg" class="avatar-choice" data-avatar="avatars/ava1.jpg">
+  <img src="avatars/ava2.jpg" class="avatar-choice" data-avatar="avatars/ava2.jpg">
+  <img src="avatars/ava3.jpg" class="avatar-choice" data-avatar="avatars/ava3.jpg">
+  <img src="avatars/ava4.jpg" class="avatar-choice" data-avatar="avatars/ava4.jpg">
+  <img src="avatars/ava5.jpg" class="avatar-choice" data-avatar="avatars/ava5.jpg">
+  <img src="avatars/ava6.jpg" class="avatar-choice" data-avatar="avatars/ava6.jpg">
+  <img src="avatars/ava7.jpg" class="avatar-choice" data-avatar="avatars/ava7.jpg">
+</div>
+
+<img id="secret-avatar" src="avatars/secret.jpg" 
+     class="avatar-choice" 
+     data-avatar="avatars/secret.jpg" 
+     style="display:none;">
+
+
+
+</body>
+</html>

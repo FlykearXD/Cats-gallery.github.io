@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Cats Image</title>
+  <link rel="icon" type="image/jpg" href="myimage.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body id="body">
+
+  <div class="navbar">
+    <a>Главная</a>
+    <a href="news.html">Новости</a>
+    <a href="#">Поддержка</a>
+    <a href="profile.html" class="profile-link">
+      <span>Профиль</span>
+      <img src="myimage.jpg" alt="Моя картинка" class="my-avatar">
+    </a>
+  </div>
+
+  <div class="content">
+    <div class="gallery">
+      <img src="1.jpg" alt="Картинка 1" title="ПКМ → Сохранить как…" onclick="openImage(this)">
+      <img src="2.jpg" alt="Картинка 2" title="ПКМ → Сохранить как…" onclick="openImage(this)">
+      <img src="3.jpg" alt="Картинка 3" title="ПКМ → Сохранить как…" onclick="openImage(this)">
+      <img src="4.jpg" alt="Картинка 4" title="ПКМ → Сохранить как…" onclick="openImage(this)">
+      <img src="5.jpg" alt="Картинка 5" title="ПКМ → Сохранить как…" onclick="openImage(this)">
+      <img src="6.jpg" alt="Картинка 6" title="ПКМ → Сохранить как…" onclick="openImage(this)">
+    </div>
+  </div>
+    
+
+  
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" onclick="closeImage()">
+    <img id="lightbox-img" src="" alt="">
+    <span class="close-btn">✖</span>
+  </div>
+
+</body>
+</html>
